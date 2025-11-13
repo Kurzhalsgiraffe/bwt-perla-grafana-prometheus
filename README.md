@@ -51,7 +51,7 @@ After installing Docker and Flask, move into the **setup** directory and edit
 ```bash
 AUTH = ("user", "password")
 ```
-to your own BWT-Perla API password.
+in **app.py** to your own BWT-Perla API password.
 
 After that, run
 ```bash
