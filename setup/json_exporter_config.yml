@@ -1,0 +1,21 @@
+modules:
+  default:
+    metrics:
+      - name: capacity_column1_ml_dh
+        path: $.CapacityColumn1_ml_dH
+        help: "Kapazität der ersten Säule (ml*dH)"
+        type: gauge
+      - name: hardness_in_dh
+        path: $.HardnessIN_dH
+        help: "Eingangswasserhärte in °dH"
+        type: gauge
+      - name: water_since_setup_l
+        path: $.WaterSinceSetup_l
+        help: "Wassermenge seit Inbetriebnahme (Liter)"
+        type: counter
+      - name: water_treated_current_day_l
+        path: $.WaterTreatedCurrentDay_l
+        help: "Behandeltes Wasser heute (Liter)"
+        type: gauge
+    headers:
+      Authorization: Basic dXNlcjp0YnV0bHk=  # Base64(user:tbutly)
